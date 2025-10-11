@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { ArrowRight } from "lucide-react";
 import { Card, CardContent } from "@/components/ui/card";
+import { ImagePlaceholder } from "@/components/ui/image-placeholder";
 
 interface ServiceCardProps {
   title: string;
@@ -11,6 +12,7 @@ interface ServiceCardProps {
 export const ServiceCard = ({ title, description, slug }: ServiceCardProps) => {
   return (
     <Card className="group overflow-hidden border-border hover:shadow-lg transition-smooth">
+      <ImagePlaceholder height="200px" text={title} className="w-full" />
       <CardContent className="p-8">
         <h3 className="font-heading text-2xl font-semibold mb-4">{title}</h3>
         <p className="text-muted-foreground mb-6 line-clamp-3">{description}</p>

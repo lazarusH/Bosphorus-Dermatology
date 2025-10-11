@@ -5,23 +5,18 @@ import {
   CarouselNext,
   CarouselPrevious,
 } from "@/components/ui/carousel";
-import beforeAfter1 from "@/assets/before-after-1.jpg";
-import beforeAfter2 from "@/assets/before-after-2.jpg";
-import beforeAfter3 from "@/assets/before-after-3.jpg";
+import { ImagePlaceholder } from "@/components/ui/image-placeholder";
 
 const galleryImages = [
   {
-    src: beforeAfter1,
     alt: "Skin treatment transformation results",
     title: "Skin Rejuvenation",
   },
   {
-    src: beforeAfter2,
     alt: "Hair transplant transformation results",
     title: "Hair Restoration",
   },
   {
-    src: beforeAfter3,
     alt: "Hydrafacial treatment results",
     title: "Hydrafacial Treatment",
   },
@@ -46,15 +41,11 @@ export const BeforeAfterGallery = () => {
               <CarouselItem key={index}>
                 <div className="p-1">
                   <div className="relative overflow-hidden group">
-                    <img
-                      src={image.src}
-                      alt={image.alt}
-                      className="w-full h-auto object-cover transition-smooth group-hover:scale-105"
-                      loading="lazy"
+                    <ImagePlaceholder 
+                      height="500px"
+                      text={image.title}
+                      className="w-full transition-smooth group-hover:scale-105"
                     />
-                    <div className="absolute bottom-0 left-0 right-0 bg-foreground/80 text-background p-4">
-                      <h3 className="font-heading text-xl font-semibold">{image.title}</h3>
-                    </div>
                   </div>
                 </div>
               </CarouselItem>

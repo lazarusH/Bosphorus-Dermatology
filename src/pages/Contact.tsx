@@ -49,9 +49,8 @@ const Contact = () => {
                 </div>
                 <h3 className="font-heading text-xl font-semibold mb-2">Location</h3>
                 <p className="text-muted-foreground">
-                  Bosphorus District<br />
-                  Istanbul, Turkey<br />
-                  34000
+                  Bole<br />
+                  Addis Ababa, Ethiopia
                 </p>
               </div>
 
@@ -62,8 +61,7 @@ const Contact = () => {
                 </div>
                 <h3 className="font-heading text-xl font-semibold mb-2">Email</h3>
                 <p className="text-muted-foreground">
-                  info@bosphorusdermatology.com<br />
-                  appointments@bosphorusdermatology.com
+                  bosphorus@gmail.com
                 </p>
               </div>
 
@@ -113,7 +111,7 @@ const Contact = () => {
                   <MapPin className="h-16 w-16 mx-auto mb-4 text-muted-foreground" />
                   <p className="text-muted-foreground">Map integration placeholder</p>
                   <p className="text-sm text-muted-foreground mt-2">
-                    Bosphorus District, Istanbul, Turkey
+                    Bole, Addis Ababa, Ethiopia
                   </p>
                 </div>
               </div>

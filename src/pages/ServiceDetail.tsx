@@ -4,6 +4,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Button } from "@/components/ui/button";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { CheckCircle } from "lucide-react";
+import { ImagePlaceholder } from "@/components/ui/image-placeholder";
 import { services } from "@/data/services";
 
 const ServiceDetail = () => {
@@ -30,6 +31,17 @@ const ServiceDetail = () => {
         </div>
       </section>
 
+      {/* Service Images Gallery */}
+      <section className="py-12 bg-secondary/30">
+        <div className="container mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
+            <ImagePlaceholder height="300px" text="Treatment Image 1" className="w-full" />
+            <ImagePlaceholder height="300px" text="Treatment Image 2" className="w-full" />
+            <ImagePlaceholder height="300px" text="Treatment Image 3" className="w-full" />
+          </div>
+        </div>
+      </section>
+
       {/* Service Details */}
       <section className="py-20">
         <div className="container mx-auto px-4">
@@ -39,6 +51,12 @@ const ServiceDetail = () => {
               <p className="text-muted-foreground leading-relaxed text-lg">
                 {service.fullDescription}
               </p>
+            </div>
+
+            {/* Before/After Images */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+              <ImagePlaceholder height="350px" text="Before Treatment" className="w-full" />
+              <ImagePlaceholder height="350px" text="After Treatment" className="w-full" />
             </div>
 
             {/* Benefits */}
@@ -55,6 +73,12 @@ const ServiceDetail = () => {
                 </div>
               </AlertDescription>
             </Alert>
+
+            {/* Additional Treatment Images */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+              <ImagePlaceholder height="300px" text="Treatment Process" className="w-full" />
+              <ImagePlaceholder height="300px" text="Results" className="w-full" />
+            </div>
 
             {/* CTA */}
             <div className="text-center animate-fade-up">

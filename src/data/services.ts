@@ -8,185 +8,193 @@ export interface Service {
 
 export const services: Service[] = [
   {
-    slug: "hair-transplant",
-    title: "Hair Transplant",
-    description: "Advanced FUE and DHI hair restoration techniques delivering natural-looking, permanent results with minimal downtime.",
-    fullDescription: "Our hair transplant procedures utilize the latest FUE (Follicular Unit Extraction) and DHI (Direct Hair Implantation) techniques to restore your hair with maximum precision and natural results. Our expert surgeons carefully extract individual follicles and implant them in thinning or balding areas, ensuring optimal density and a natural hairline. The procedure is minimally invasive with quick recovery time.",
+    slug: "adult-dermatology",
+    title: "Adult Dermatology",
+    description: "A comprehensive medical science that consists of diagnosing conditions of the skin, hair, and nails.",
+    fullDescription: "Adult Dermatology is a comprehensive medical science that consists of diagnosing conditions of the skin, hair, and nails. We take a comprehensive approach to treating a variety of conditions, ensuring personalized care for each patient's unique dermatological needs.",
     benefits: [
-      "Permanent, natural-looking results",
-      "Minimal scarring with FUE technique",
-      "Quick recovery with minimal downtime",
-      "Customized hairline design",
-      "High success rate with experienced surgeons"
+      "Comprehensive skin, hair, and nail diagnosis",
+      "Personalized treatment plans",
+      "Expert medical care",
+      "Advanced diagnostic techniques",
+      "Holistic approach to skin health"
+    ]
+  },
+  {
+    slug: "hair-transplant",
+    title: "Hair Transplant For Hair/Beard/Eyebrows",
+    description: "FUE hair transplantation for head, beard, and eyebrows - a sutureless method with natural-looking results.",
+    fullDescription: "Hair Transplantation is a surgical technique that removes hair follicles by Follicular Unit Extraction (FUE). It is a sutureless method of hair restoration in which hair follicles are extracted from the back of head called the 'Donor Site' under local anaesthesia with the help of special micropunches and implanted in the bald area known as the 'Recipient Site'. The technique is primarily used to treat male/female pattern baldness on head, eyebrows, and beard hair.",
+    benefits: [
+      "Less Maintenance",
+      "A Long-Term Solution",
+      "Free Of Pain And Scars",
+      "Natural-Looking",
+      "Enhancement of Appearance",
+      "Success Rate Is High",
+      "Low Risk Of Side Effects",
+      "Complications Are Unlikely To Occur",
+      "No Long-Term Medications Required",
+      "Quick Recovery"
     ]
   },
   {
     slug: "hydrafacial",
     title: "Hydrafacial",
-    description: "Multi-step facial treatment that cleanses, exfoliates, and hydrates skin using patented technology for immediate, glowing results.",
-    fullDescription: "HydraFacial is a revolutionary multi-step treatment that cleanses, exfoliates, extracts impurities, and hydrates the skin using patented Vortex-Fusion technology. This non-invasive procedure delivers immediate results with no downtime, making it perfect for all skin types. The treatment includes deep cleansing, gentle exfoliation, painless extractions, and intense hydration with antioxidants and peptides.",
+    description: "Noninvasive procedure that resurfaces, exfoliates, deep cleans and hydrates skin with nourishing serums.",
+    fullDescription: "This is a noninvasive procedure that can help resurface, exfoliate, deep clean and hydrate skin. The exfoliation and extraction steps of the Hydrafacial help to remove dead skin cells and debris, while the infusion of nourishing serums promotes cell renewal and improves skin texture, resulting in a more refined and balanced appearance. It can help prevent and treat skin conditions like acne, premature aging, wrinkles, fine lines, skin dehydration, dark spots, and also helps product to penetrate to the skin as it cleans deeply and opens clogged pores. The skin will be drenched in a blend of antioxidants, peptides, and hyaluronic acid, resulting in a deeply hydrated and plump appearance. The intense hydration provided by the Hydrafacial helps to restore moisture balance and enhance your skin's overall health and vitality. The hydrating serums used during the procedure can help diminish the appearance of fine lines and wrinkles, giving you a more youthful and rejuvenated look.",
     benefits: [
       "Immediate visible results",
-      "Suitable for all skin types",
-      "No downtime or discomfort",
-      "Addresses multiple skin concerns simultaneously",
-      "Customizable treatment serums"
+      "Deep cleansing and exfoliation",
+      "Treats multiple skin concerns",
+      "No downtime",
+      "Hydrates and plumps skin",
+      "Reduces fine lines and wrinkles",
+      "Improves skin texture and tone"
     ]
   },
   {
     slug: "microneedling",
-    title: "Microneedling",
-    description: "Collagen-inducing therapy using fine needles to improve skin texture, reduce scars, and promote natural skin rejuvenation.",
-    fullDescription: "Microneedling, also known as collagen induction therapy, uses fine needles to create controlled micro-injuries in the skin, triggering the body's natural healing process. This stimulates collagen and elastin production, resulting in smoother, firmer, and more youthful-looking skin. The treatment is highly effective for reducing acne scars, fine lines, wrinkles, and improving overall skin texture.",
+    title: "Dermapen / Microneedling",
+    description: "Cosmetic procedure using sterilized needles to generate new collagen and improve skin texture.",
+    fullDescription: "Microneedling is a cosmetic procedure that uses small, sterilized needles to prick the skin. This treatment aims to generate new collagen and skin tissue to smooth, firm, and tone skin. Microneedling is mostly used on the face and may reduce the appearance of acne, scars, dark spots, wrinkles, and large pores, aids the absorption of topical skin care products & improves overall health of skin.",
     benefits: [
-      "Stimulates natural collagen production",
-      "Reduces appearance of scars and wrinkles",
-      "Improves skin texture and tone",
-      "Minimal downtime",
-      "Safe for all skin types"
+      "Generates new collagen",
+      "Reduces acne scars",
+      "Minimizes dark spots and wrinkles",
+      "Shrinks large pores",
+      "Enhances product absorption",
+      "Improves overall skin health"
+    ]
+  },
+  {
+    slug: "vampire-facial",
+    title: "Plasma Vampire Facial",
+    description: "Non-surgical treatment using your own plasma to regenerate and rejuvenate facial skin.",
+    fullDescription: "The Vampire Facial is a non-surgical and minimally invasive treatment. The procedure involves creating tiny puncture holes on your face, stimulating the regenerating plasma production into the skin. A Vampire Facial is a relatively painless experience that harnesses your body's natural healing powers.",
+    benefits: [
+      "Reduce wrinkles",
+      "Plump up sagging skin",
+      "Get rid of deep creases",
+      "Improve one's complexion",
+      "Non-surgical approach",
+      "Minimally invasive"
+    ]
+  },
+  {
+    slug: "dermaplaning",
+    title: "Dermaplaning",
+    description: "Minimally invasive procedure that shaves away top skin layers to reveal fresher, smoother skin.",
+    fullDescription: "Dermaplaning is a minimally invasive procedure that shaves away the top layers of your skin. It can help reduce the appearance of acne scars, pitted skin or other skin imperfections by revealing newer, undamaged skin. Some people get dermaplaning to remove unwanted facial hair.",
+    benefits: [
+      "Reduces acne scars",
+      "Smooths pitted skin",
+      "Removes facial hair",
+      "Reveals fresher skin",
+      "Minimally invasive",
+      "Immediate results"
+    ]
+  },
+  {
+    slug: "microdermabrasion",
+    title: "Microdermabrasion",
+    description: "Gentle skin resurfacing using a minimally abrasive instrument for a refreshed appearance.",
+    fullDescription: "Microdermabrasion uses a handheld minimally abrasive instrument to gently sand your skin, removing the thicker, uneven outer layer. This treatment can improve age spots and blackheads, improve hyperpigmentation, exfoliate your skin for a refreshed appearance, lessen the appearance of stretch marks, reduce fine lines and wrinkles, reduce or eliminate enlarged pores, and treat acne and acne scars.",
+    benefits: [
+      "Improve age spots and blackheads",
+      "Improve hyperpigmentation",
+      "Exfoliate for refreshed appearance",
+      "Lessen stretch marks",
+      "Reduce fine lines and wrinkles",
+      "Reduce enlarged pores",
+      "Treat acne and acne scars"
+    ]
+  },
+  {
+    slug: "led-light-therapy",
+    title: "LED Light Therapy",
+    description: "Skin-safe, low-level light treatment in different wavelengths and colors for various skin conditions.",
+    fullDescription: "LED Light Therapy is a skin treatment that doesn't use ultraviolet light. Instead, it uses skin-safe, low-level light in different wavelengths and colors for different skin-related conditions. Treatment options include blue light, red light, green light, yellow light, and white light, each targeting specific skin concerns.",
+    benefits: [
+      "Non-UV light treatment",
+      "Multiple wavelength options",
+      "Treats various skin conditions",
+      "Safe and non-invasive",
+      "No downtime",
+      "Customizable to skin needs"
+    ]
+  },
+  {
+    slug: "electrocautery",
+    title: "Electrocautery",
+    description: "Electric-heated electrode procedure to destroy unwanted skin growths safely and effectively.",
+    fullDescription: "Electrocautery is a procedure that uses electric-heated electrodes to destroy unwanted skin growth. This simple procedure can be done in outpatient or clinical setting. Some of the indications include: DPN, Skin Tag, Mole, Warts, and Vascular Lesions.",
+    benefits: [
+      "Removes DPN effectively",
+      "Safe mole removal",
+      "Treats warts",
+      "Removes skin tags",
+      "Treats vascular lesions",
+      "Outpatient procedure",
+      "Quick and effective"
     ]
   },
   {
     slug: "laser-hair-removal",
     title: "Laser Hair Removal",
-    description: "Permanent hair reduction using advanced laser technology for smooth, hair-free skin on all body areas.",
-    fullDescription: "Our state-of-the-art laser hair removal technology delivers safe, effective, and long-lasting hair reduction for all skin types. The treatment uses concentrated light beams to target hair follicles, preventing future growth while leaving surrounding skin unharmed. Multiple sessions ensure optimal results with permanent hair reduction.",
+    description: "Diode laser technology for permanent hair reduction, effective on dark skin and dark hair.",
+    fullDescription: "Diode Lasers Hair Removals use a single wavelength of light that has a high absorption rate in melanin. As the melanin heats up it destroys the root and blood flow to the follicle disabling the hair growth permanently. Diode Laser Removals are the popular laser wavelengths that work for dark skin and dark hair. The Diode wavelength is very effective on darker skin tones.",
     benefits: [
-      "Long-lasting hair reduction",
-      "Precise targeting without damaging skin",
-      "Quick treatment sessions",
-      "Suitable for all body areas",
-      "Smoother skin without ingrown hairs"
-    ]
-  },
-  {
-    slug: "botox-fillers",
-    title: "Botox & Dermal Fillers",
-    description: "Injectable treatments to smooth wrinkles, restore volume, and achieve natural-looking facial rejuvenation.",
-    fullDescription: "Our expert practitioners use premium Botox and dermal fillers to reduce fine lines, wrinkles, and restore facial volume. Botox relaxes muscles that cause dynamic wrinkles, while dermal fillers add volume and contour to areas that have lost fullness due to aging. Treatments are customized to achieve natural, refreshed results that enhance your unique beauty.",
-    benefits: [
-      "Non-surgical facial rejuvenation",
-      "Quick treatment with immediate results",
-      "Minimal to no downtime",
-      "Natural-looking enhancement",
-      "Long-lasting effects (6-18 months)"
-    ]
-  },
-  {
-    slug: "chemical-peels",
-    title: "Chemical Peels",
-    description: "Customized exfoliating treatments that improve skin tone, texture, and clarity by removing damaged outer layers.",
-    fullDescription: "Chemical peels use carefully selected acid solutions to exfoliate and remove damaged skin layers, revealing fresher, healthier skin underneath. We offer various peel strengths tailored to your specific skin concerns, from superficial peels for mild rejuvenation to deeper peels for more dramatic results. Treatments address acne, pigmentation, fine lines, and uneven texture.",
-    benefits: [
-      "Improves skin texture and tone",
-      "Reduces hyperpigmentation and sun damage",
-      "Minimizes fine lines and wrinkles",
-      "Treats acne and acne scars",
-      "Customizable depth and strength"
+      "Best way to get rid of unwanted hair",
+      "Leaves the skin undamaged",
+      "Long term or permanent hair reduction",
+      "Less painful than waxing",
+      "Removes hair from any part of the body",
+      "Effective on darker skin tones"
     ]
   },
   {
     slug: "prp-therapy",
-    title: "PRP Therapy",
-    description: "Platelet-Rich Plasma treatment using your own blood to stimulate healing and rejuvenation for skin and hair.",
-    fullDescription: "PRP (Platelet-Rich Plasma) therapy harnesses your body's natural healing powers by concentrating growth factors from your own blood. When injected into the scalp, it stimulates hair growth and thickness. When used for facial rejuvenation, it promotes collagen production and skin renewal. This natural treatment is safe, effective, and delivers gradual, long-lasting improvements.",
+    title: "Platelet-Rich Plasma (PRP) For Hair/Eyebrows/Beard",
+    description: "PRP injections to prevent hair loss and promote new hair growth on head, eyebrows, and beard.",
+    fullDescription: "Platelet-Rich Plasma consists of two elements: Plasma or the liquid portion of blood, and platelets. PRP injections can be effective in preventing and treating hair loss and promoting new hair growth both in male/female pattern baldness on head, eyebrows and beard. PRP can also aid in the stimulation of hair growth after hair transplants.",
     benefits: [
-      "100% natural using your own blood",
-      "Stimulates hair growth and skin rejuvenation",
-      "Minimal risk of allergic reactions",
-      "Long-lasting natural results",
-      "No downtime"
+      "Prevents and treats hair loss",
+      "Promotes new hair growth",
+      "Effective for head, eyebrows, and beard",
+      "Aids post-transplant hair growth",
+      "Uses your own blood",
+      "Natural treatment approach"
     ]
   },
   {
-    slug: "skin-tightening",
-    title: "Non-Surgical Skin Tightening",
-    description: "Advanced radiofrequency and ultrasound treatments to lift and firm sagging skin without surgery.",
-    fullDescription: "Our non-surgical skin tightening treatments use radiofrequency and ultrasound energy to heat deep layers of skin, stimulating collagen production and tissue contraction. This results in firmer, tighter, more youthful-looking skin without surgery or significant downtime. Ideal for treating sagging skin on the face, neck, and body.",
+    slug: "g5-massage",
+    title: "G5 Massage",
+    description: "Gyratory soft tissue massage using vibration and percussion to stimulate healing and reduce cellulite.",
+    fullDescription: "Deep Tissue Massages the (G5) works by creating a gyratory soft tissue massage effect on muscles and deeper tissues. Simultaneously, it uses vibration and percussion to increase blood flow and to stimulate a range of healing processes. The combined free movement achieved by the G5 Machine makes it unique in its effect.",
     benefits: [
-      "Non-invasive with no surgery required",
-      "Stimulates natural collagen production",
-      "Gradual, natural-looking results",
-      "Minimal to no downtime",
-      "Suitable for face, neck, and body"
+      "Reduce cellulite",
+      "Prevent sports massage",
+      "Slimming",
+      "Improves and increases circulation",
+      "Drains excess tissue fluid, waste and toxins",
+      "Skin toning",
+      "Improves skin texture",
+      "Reduces muscular tension - relieving aches & pains"
     ]
   },
   {
-    slug: "acne-treatment",
-    title: "Advanced Acne Treatment",
-    description: "Comprehensive medical-grade treatments targeting acne at its source for clearer, healthier skin.",
-    fullDescription: "Our comprehensive acne treatment program combines medical-grade topicals, advanced procedures, and lifestyle guidance to effectively treat acne at its source. We address all types of acne—from mild breakouts to severe cystic acne—using proven dermatological protocols. Treatment plans may include prescription medications, chemical peels, laser therapy, and customized skincare regimens.",
+    slug: "skincare-consultation",
+    title: "Skin Care And Product Consultation",
+    description: "Professional consultation to identify your skin type and determine the best products for your needs.",
+    fullDescription: "A Skincare Consultation is an invaluable tool for helping you identify your skin type, and concerns, and determining the best products to use. It helps you gain a better understanding of your skin's needs while taking into account factors like lifestyle and environment that can impact the health of your skin.",
     benefits: [
-      "Medical-grade treatment protocols",
-      "Addresses root causes of acne",
-      "Prevents future breakouts and scarring",
-      "Customized treatment plans",
-      "Combines multiple effective modalities"
-    ]
-  },
-  {
-    slug: "pigmentation-treatment",
-    title: "Pigmentation Treatment",
-    description: "Specialized treatments to reduce dark spots, melasma, and uneven skin tone for a more radiant complexion.",
-    fullDescription: "Our pigmentation treatments target hyperpigmentation, melasma, sun spots, and uneven skin tone using advanced laser technology, chemical peels, and medical-grade lightening agents. We create customized treatment plans based on your specific pigmentation concerns and skin type to safely and effectively restore an even, radiant complexion.",
-    benefits: [
-      "Reduces dark spots and hyperpigmentation",
-      "Evens skin tone and texture",
-      "Safe for all skin types",
-      "Customized treatment combinations",
-      "Long-lasting brightening results"
-    ]
-  },
-  {
-    slug: "scar-treatment",
-    title: "Scar Treatment & Revision",
-    description: "Advanced techniques including laser therapy and microneedling to minimize the appearance of scars.",
-    fullDescription: "Our scar treatment program uses the latest technologies including laser resurfacing, microneedling, chemical peels, and injectable treatments to significantly improve the appearance of acne scars, surgical scars, and traumatic scars. We customize treatment protocols based on scar type, depth, and location to achieve optimal improvement.",
-    benefits: [
-      "Improves appearance of various scar types",
-      "Stimulates collagen remodeling",
-      "Combines multiple effective techniques",
-      "Gradual, natural improvement",
-      "Minimal downtime"
-    ]
-  },
-  {
-    slug: "anti-aging-treatments",
-    title: "Comprehensive Anti-Aging",
-    description: "Holistic approach combining multiple treatments to address all signs of aging for complete facial rejuvenation.",
-    fullDescription: "Our comprehensive anti-aging program takes a holistic approach to facial rejuvenation, combining the best treatments to address multiple signs of aging simultaneously. We may incorporate injectables, laser treatments, skin tightening, peels, and medical-grade skincare to achieve dramatic yet natural-looking results tailored to your unique aging concerns.",
-    benefits: [
-      "Multi-modal approach for optimal results",
-      "Addresses all signs of aging",
-      "Customized treatment combinations",
-      "Natural, refreshed appearance",
-      "Long-lasting rejuvenation"
-    ]
-  },
-  {
-    slug: "body-contouring",
-    title: "Non-Invasive Body Contouring",
-    description: "Advanced fat reduction and body shaping treatments without surgery for a more sculpted physique.",
-    fullDescription: "Our non-invasive body contouring treatments use cutting-edge technology to reduce stubborn fat deposits and sculpt your body without surgery. Using methods like cryolipolysis (fat freezing) and radiofrequency, we target and eliminate fat cells while tightening skin for a more contoured, toned appearance.",
-    benefits: [
-      "No surgery or anesthesia required",
-      "Reduces stubborn fat deposits",
-      "Skin tightening effects",
-      "Minimal to no downtime",
-      "Long-lasting body sculpting results"
-    ]
-  },
-  {
-    slug: "medical-skincare",
-    title: "Medical-Grade Skincare",
-    description: "Professional dermatologist-prescribed products and routines for optimal skin health and appearance.",
-    fullDescription: "Our medical-grade skincare program features pharmaceutical-strength products that penetrate deeper and deliver superior results compared to over-the-counter options. After a thorough skin analysis, our dermatologists prescribe customized regimens using proven ingredients to address your specific concerns and optimize skin health.",
-    benefits: [
-      "Pharmaceutical-strength formulations",
-      "Dermatologist-customized regimens",
-      "Clinically proven ingredients",
-      "Superior absorption and efficacy",
-      "Professional guidance and monitoring"
+      "Identify your skin type",
+      "Personalized product recommendations",
+      "Understanding of skin needs",
+      "Lifestyle and environment considerations",
+      "Professional guidance",
+      "Optimized skincare routine"
     ]
   }
 ];

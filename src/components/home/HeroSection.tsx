@@ -1,32 +1,35 @@
 import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import heroImage from "@/assets/hero-clinic.jpg";
+import { BeforeAfterSlider } from "./BeforeAfterSlider";
 
 export const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <div 
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: `url(${heroImage})` }}
-      >
-        <div className="absolute inset-0 bg-foreground/40" />
-      </div>
+    <section className="min-h-screen flex items-center">
+      <div className="container mx-auto px-4 py-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          {/* Left Side - Text Content */}
+          <div className="animate-fade-up">
+            <h1 className="font-heading text-4xl md:text-6xl font-bold mb-6 leading-tight">
+              Bosphorus Dermatology & Aesthetic Center
+            </h1>
+            <p className="text-lg md:text-xl text-muted-foreground mb-8 max-w-xl">
+              Where Medical Excellence Meets Aesthetic Artistry
+            </p>
+            <Link to="/contact">
+              <Button 
+                size="lg" 
+                className="bg-foreground text-background hover:bg-background hover:text-foreground hover:border-2 hover:border-foreground font-semibold px-8 py-6 text-lg transition-smooth"
+              >
+                Book Your Consultation
+              </Button>
+            </Link>
+          </div>
 
-      <div className="relative z-10 container mx-auto px-4 text-center animate-fade-up">
-        <h1 className="font-heading text-5xl md:text-7xl font-bold text-background mb-6 max-w-4xl mx-auto leading-tight">
-          Bosphorus Dermatology & Aesthetic Center
-        </h1>
-        <p className="text-xl md:text-2xl text-background/90 mb-8 max-w-2xl mx-auto">
-          Where Medical Excellence Meets Aesthetic Artistry
-        </p>
-        <Link to="/contact">
-          <Button 
-            size="lg" 
-            className="bg-background text-foreground hover:bg-background/90 font-semibold px-8 py-6 text-lg transition-smooth"
-          >
-            Book Your Consultation
-          </Button>
-        </Link>
+          {/* Right Side - Before/After Slider */}
+          <div className="h-[500px] lg:h-[600px] animate-fade-up">
+            <BeforeAfterSlider />
+          </div>
+        </div>
       </div>
     </section>
   );
