@@ -9,8 +9,8 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { ImagePlaceholder } from "@/components/ui/image-placeholder";
 import { services } from "@/data/services";
+import logo from "@/assets/logo.png";
 
 const navigation = [
   { name: "Home", href: "/" },
@@ -34,18 +34,17 @@ export const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 bg-background border-b border-border transition-smooth ${
-        scrolled ? "py-3" : "py-6"
+      className={`fixed top-0 left-0 right-0 z-50 bg-primary shadow-md transition-smooth ${
+        scrolled ? "py-2" : "py-4"
       }`}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between">
           <Link to="/" className="flex items-center">
-            <ImagePlaceholder 
-              width={scrolled ? "40px" : "56px"}
-              height={scrolled ? "40px" : "56px"}
-              text="Logo"
-              className="transition-smooth"
+            <img 
+              src={logo}
+              alt="Bosphorus Dermatology Center"
+              className={`transition-smooth object-contain ${scrolled ? "h-10" : "h-14"}`}
             />
           </Link>
 
@@ -84,7 +83,7 @@ export const Header = () => {
             </DropdownMenu>
             
             <Link to="/contact">
-              <Button variant="default" size="sm">
+              <Button variant="default" size="sm" className="bg-primary hover:bg-accent text-primary-foreground hover:text-accent-foreground shadow-md hover:shadow-lg transition-smooth">
                 Book Consultation
               </Button>
             </Link>
@@ -128,7 +127,7 @@ export const Header = () => {
                 </div>
                 
                 <Link to="/contact" onClick={() => setOpen(false)}>
-                  <Button variant="default" className="w-full">
+                  <Button variant="default" className="w-full bg-primary hover:bg-accent text-primary-foreground hover:text-accent-foreground shadow-md hover:shadow-lg transition-smooth">
                     Book Consultation
                   </Button>
                 </Link>

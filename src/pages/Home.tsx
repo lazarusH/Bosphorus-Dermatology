@@ -12,9 +12,12 @@ const Home = () => {
       <HeroSection />
 
       {/* About Snippet */}
-      <section className="py-20 container mx-auto px-4">
+      <section className="py-24 container mx-auto px-4 bg-white">
         <div className="max-w-4xl mx-auto text-center animate-fade-up">
-          <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6">
+          <div className="inline-block px-4 py-2 bg-primary/10 rounded-full mb-6">
+            <span className="text-sm font-medium text-accent uppercase tracking-wide">About Us</span>
+          </div>
+          <h2 className="font-heading text-4xl md:text-5xl font-bold mb-8 text-foreground">
             Welcome to Bosphorus
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
@@ -27,13 +30,16 @@ const Home = () => {
       </section>
 
       {/* Featured Services */}
-      <section className="py-20 bg-secondary/30">
+      <section className="py-24 bg-secondary">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12 animate-fade-up">
-            <h2 className="font-heading text-4xl md:text-5xl font-bold mb-4">
-              Our Featured Services
+          <div className="text-center mb-16 animate-fade-up">
+            <div className="inline-block px-4 py-2 bg-white/50 rounded-full mb-6">
+              <span className="text-sm font-medium text-accent uppercase tracking-wide">Our Services</span>
+            </div>
+            <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6 text-foreground">
+              Featured Treatments
             </h2>
-            <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+            <p className="text-muted-foreground text-lg max-w-2xl mx-auto leading-relaxed">
               Discover our most sought-after treatments designed to enhance your natural beauty
             </p>
           </div>

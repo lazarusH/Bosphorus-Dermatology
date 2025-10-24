@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { ImagePlaceholder } from "@/components/ui/image-placeholder";
+import beforeImage from "@/assets/before.png";
+import afterImage from "@/assets/after.png";
 
 export const BeforeAfterSlider = () => {
   const [sliderPosition, setSliderPosition] = useState(50);
@@ -17,7 +18,7 @@ export const BeforeAfterSlider = () => {
 
   return (
     <div 
-      className="relative w-full h-full overflow-hidden cursor-ew-resize select-none"
+      className="relative w-full h-full overflow-hidden cursor-ew-resize select-none rounded-lg shadow-luxury"
       onMouseDown={(e) => {
         setIsDragging(true);
         handleMove(e);
@@ -34,9 +35,9 @@ export const BeforeAfterSlider = () => {
     >
       {/* After Image (Background) */}
       <div className="absolute inset-0">
-        <ImagePlaceholder 
-          height="100%" 
-          text="After Treatment"
+        <img 
+          src={afterImage}
+          alt="After Treatment - Radiant Skin"
           className="w-full h-full"
         />
       </div>
@@ -46,11 +47,10 @@ export const BeforeAfterSlider = () => {
         className="absolute inset-0 overflow-hidden"
         style={{ width: `${sliderPosition}%` }}
       >
-        <ImagePlaceholder 
-          height="100%" 
-          text="Before Treatment"
-          className="w-full h-full absolute inset-0"
-          style={{ width: '100vw', maxWidth: 'none' }}
+        <img 
+          src={beforeImage}
+          alt="Before Treatment"
+          className="w-full h-full"
         />
       </div>
 
